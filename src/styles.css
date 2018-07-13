@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.my-font {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(99, 98, 98);
+  }
+
+  .weather__card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+    justify-items: center;
+    padding: 2rem;
+    margin: 2rem;
+    width: 25rem;
+    height: 30rem;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 1.75rem;
+    animation: 1.25s ease-in-out 0ms 1 fadein;
+  }
+
+
+  .body__container {
+   
+    align-self: end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+  }

@@ -1,0 +1,34 @@
+
+
+  <mat-toolbar color="primary">
+      My Grocery List
+  </mat-toolbar>
+
+  <mat-card>
+    <div class="my-font">
+      <p>Add items to your grocery list by clicking the button:</p>
+    </div>
+    <div>
+      <mat-form-field>
+        <div>
+          <input matInput placeholder="Enter item" required [(ngModel)]="groceryItem">
+        </div>
+      </mat-form-field>
+
+        <div>
+          <button mat-raised-button color="primary" (click)="addItem()">Add</button>
+        </div>
+
+        <div>
+            <mat-selection-list>
+                <mat-list-option *ngFor="let groceryItem of groceryItems">
+                  {{groceryItem}}
+                </mat-list-option>
+            </mat-selection-list>
+        </div>
+   
+    
+    </div>
+  </mat-card>
+
+
