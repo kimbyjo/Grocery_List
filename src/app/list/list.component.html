@@ -1,12 +1,13 @@
 
-
+<div class="body__container">
+  <div>
   <mat-toolbar color="primary">
       My Grocery List
   </mat-toolbar>
 
   <mat-card>
     <div class="my-font">
-      <p>Add items to your grocery list by clicking the button:</p>
+      <p>Include items in your grocery list by clicking "Add". Remove all items by clicking "Clear".</p>
     </div>
     <div>
       <mat-form-field>
@@ -17,6 +18,8 @@
 
         <div>
           <button mat-raised-button color="primary" (click)="addItem()">Add</button>
+          &nbsp;&nbsp;&nbsp;
+          <button mat-raised-button color="theme" (click)="clearItems()">Clear</button>
         </div>
 
         <div>
@@ -30,5 +33,7 @@
     
     </div>
   </mat-card>
+  </div>
+</div>
 
 

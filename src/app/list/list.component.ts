@@ -12,13 +12,15 @@ export class ListComponent implements OnInit {
   
 
   addItem(){
-    console.log(this.groceryItem);
     this.groceryItems.push(this.groceryItem);
+    this.groceryItem = " ";   
+
+  }
+
+  clearItems(){
+    this.groceryItems.length = 0;
     console.log(this.groceryItems);
-    this.groceryItem = " ";
-  
-   
-    
+    this.groceryItem = " "; 
 
   }
 
